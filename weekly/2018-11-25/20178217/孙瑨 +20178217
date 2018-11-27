@@ -1,0 +1,47 @@
+【个人周报】孙瑨  201782117
+1.本周工作
+  -学习新的案例（飞盘射击）
+  -学习了一些unity上的一些特效组件以及API
+  -尝试不看视频去完成拾荒者
+2.下周计划
+  -继续学习案例视频
+  -学习模拟电子电路
+  -开始学习美工
+3.成果展示
+  1.UI的创建
+   学习了旧版UI的GUIText以及GUITexture
+ 2.鼠标事件
+   OnMouseEnter()
+   OnMouseExit()
+   OnMouseDown()
+   如果鼠标移到上面，就进行什么操作；如果鼠标离开，就进行什么操作；如果按下鼠标，就进行什么操作
+ 3.Trail Renderer：拖尾渲染器
+   体现物体的运动速度
+   首先创作一个空游戏物体
+   component——effect——Trail Renderer
+ 4.制作透明材质球
+  创建一个材质球 creat——Materials——trails
+  设置该材质球 shader——particles——additive
+  给材质球赋予贴图
+ 5.实例化游戏物体
+   1.案例场景制作
+   制作地面模型
+   制作cube（拖拽到预制体中prefab）
+   实例化生成一个坛子
+   gameobject.instantiate(object.vector3.quaternion)
+   object 用于实例化的预制体
+   Vector3 实例化后生成的物体所在的位置
+   Quaternion identity 无旋转
+  6.构建随机位置
+    x.y.z决定了物体在三维世界中的位置
+    Random.Range(min.max)生成随机数
+    Vector3.position=new Vector3(1,1,1)
+  7. 销毁
+    gameobject.destroy(object,float)
+    object:销毁的物体
+    float：多少秒后销毁
+    gameobject，Dstroy(gameobject)
+    
+  
+  
+   
