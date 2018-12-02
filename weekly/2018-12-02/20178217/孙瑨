@@ -1,0 +1,29 @@
+【个人周报】孙瑨 20178217
+1.本周工作
+  -完成了飞盘射击游戏以及吃豆人游戏的开始
+  -学习了一些API，增加了自己的知识
+2.下周计划
+ -继续进行吃豆人游戏的制作
+ -在写代码方面进行加强
+ -复习之前的知识点
+3.成果展示
+-学习了渲染组件
+go.component<MeshRenderer>().material.color=new.color（）
+-学习了绘制射线
+ray=Camera.main.ScreenPointToRay(Input.Mouseposition)
+-画出一条射线
+Debug.Drawline(point.position,hit.point,color.red)
+-加线渲染器效果
+linerenderer.Setposition(0,point.position)
+linerenderer.Setposition(1,hit.point)
+-查找到碰撞物体的父物体
+hit.collider.gameobject.Getcomponent<Transform>().parent
+-获取所有子物体的组件
+Transform.GetcomponentInChildren<Transform>()
+-给游戏物体添加组件
+GameObject.Addcomponent<Transform>();
+-Mathf 数学类
+Mathf.Abs()取绝对值
+Mathf.Max()取最大值
+Mathf.Lerp(float a,float b,float t)
+基于浮点数T返回a到b之间的插值
