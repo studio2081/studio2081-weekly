@@ -1,0 +1,23 @@
+【个人周报】 孙瑨 20178217
+1.本周工作
+  -继续消化案例，看上个星期自己没有看懂的地方
+  -完成了热学考试
+2.下周计划
+  -自己在案例中还有很多不懂的点，准备继续消化吸收
+3.成果展示
+学会了完善吃豆人的移动
+移动方法1.transform.position 瞬间移动
+Rigidbody2D 物理移动
+Vector2.MoveTowards(transform.position,dest,speed);
+Getcomponent<Rigidbody2D>().Moveposition(temp);
+同时在unity中的rigidbody2D中冻结Z轴的旋转
+检测要到的地方到底能不能动
+private bool valid（Vector dir）
+{Vector2.pos=transform.position
+RayCastHit2D hit=phsics2D.LineCast(pos+dir.pos);
+return(hit.collider==Getcomponent<collider2D>());
+如果撞到是吃豆人 返回为true  撞到的是墙  返回为false
+在代码中如何让状态机接收到X和Y的值
+Vector2 dir=dest-(Vector2)transform.position;
+gameobject.Getcomponent<Animator>().SetFloat("DirX",dirX);
+就是让状态机的SetFloat的DirX选项接收到dirX这个参数
