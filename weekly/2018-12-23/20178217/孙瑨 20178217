@@ -1,0 +1,33 @@
+【个人周报】 孙瑨 20178217
+1.本周工作
+-重新温习案例
+-复习自己第一次没掌握的方法
+-复习模电和数理方程
+2.下周计划
+-复习模电
+-复习剩下没看完的案例
+3.成果展示
+-吃掉Pacman
+首先给敌人和Pacman都加上碰撞器
+定义一个方法
+private void onTriggerEnter()
+{
+if (collision.gameobject=="Pacman";)
+{Destroy(collision.gameobject);
+}
+-改进巡逻系统让鬼可以随机选择
+public Gameobject[] waypointsGo;
+private List<Vector3> waypoints=new List<Vector3>();
+在start方法中
+foreah(transform t in waypintsGo.transform)
+waypoints.Add(t.transform)
+把waypointsgo里的位置信息存储在waypoints数组里面
+-移动的2种方法
+1.public float speed=0.3f
+transform.translate(Vector3.forward*Time.deltatime*speed)
+2.public float speed =0.3f;
+float translation=Input.GetAxis("Verticle")*speed*Time.deltatime;
+transform.translate(0,0,translation);//这个是沿Z移动
+
+
+
